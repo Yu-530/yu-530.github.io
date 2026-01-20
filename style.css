@@ -1,0 +1,49 @@
+/* 全局样式 */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* 标题 */
+h1, h2, h3 {
+  color: #222;
+}
+
+/* 链接样式 */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 文章卡片风格 */
+.post {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* 响应式图片 */
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* 导航栏 */
+nav {
+  margin-bottom: 30px;
+  text-align: center;
+}
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
