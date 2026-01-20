@@ -1,0 +1,110 @@
+/* 重置默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f6fa;
+    color: #333;
+}
+
+/* 容器 */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 顶部导航 */
+header {
+    background-color: #2f3640;
+    color: white;
+    padding: 1rem 0;
+}
+header .logo {
+    float: left;
+}
+header nav ul {
+    list-style: none;
+    float: right;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Hero 区域 */
+.hero {
+    background: linear-gradient(120deg,#6a11cb,#2575fc);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: white;
+    color: #2575fc;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.hero .btn:hover {
+    background-color: #e1e1e1;
+}
+
+/* 文章列表 */
+.posts {
+    padding: 50px 0;
+}
+.posts h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.post-list article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.post-list article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.post-list article h3 a {
+    text-decoration: none;
+    color: #2f3640;
+}
+
+/* 页脚 */
+footer {
+    background-color: #2f3640;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer a {
+    color: #e1e1e1;
+    text-decoration: none;
+}
