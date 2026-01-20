@@ -1,49 +1,54 @@
-/* 全局样式 */
+/* 全局 */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   max-width: 900px;
   margin: auto;
   padding: 20px;
-  line-height: 1.6;
-  background: #f9f9f9;
+  background: #f4f4f9;
   color: #333;
+  line-height: 1.6;
 }
 
-/* 标题 */
-h1, h2, h3 {
-  color: #222;
+/* 导航栏 */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 20px;
 }
-
-/* 链接样式 */
-a {
-  color: #1e90ff;
+nav a {
   text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
 }
-a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
-/* 文章卡片风格 */
+/* 标题 */
+h1, h2 {
+  color: #222;
+}
+
+/* 文章卡片 */
 .post {
   background: white;
-  padding: 15px 20px;
+  padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/* 响应式图片 */
+/* 图片 */
 img {
   max-width: 100%;
   border-radius: 8px;
 }
 
-/* 导航栏 */
-nav {
-  margin-bottom: 30px;
+/* 底部 */
+footer {
   text-align: center;
-}
-nav a {
-  margin: 0 15px;
-  font-weight: bold;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #777;
 }
